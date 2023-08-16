@@ -144,25 +144,34 @@ header .container{
 
 
  .section-header {
-    background-image: url("/hero-bg.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+     url("/hero-bg.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 490px;
+    
+   
     background-position:  center top  ;
-    
-    
-    
-    
-    
+    position: relative
     
 
     
-    
-    
-    
-    
  }
+
+
+ /* .section-header-overlow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+
+ } */
  /* .section-header::after{
     content: '';
     width: 100%;
@@ -171,11 +180,13 @@ header .container{
     left: 0;
     position: absolute;
     
-    background-color: rgba(0, 0, 0, 0.13 );
+    background-color: rgba(0, 0, 0, 0.5 );
  } */
 
  .sec-info .container{
     padding: 100px 0px;
+    z-index: 11;
+    position: relative;
     
 
  }
@@ -753,7 +764,6 @@ text-align: center;
 
 .em{
     border: 0;
-    padding: 4px 8px;
     outline: none;
 }
 .sb{
@@ -865,18 +875,20 @@ text-align: center;
 
 .Events .container{
     display: flex;
+    justify-content: space-between;
     padding: 50px 0;
-    
     gap: 20px;
     align-items: center;
+    position: relative;
+    /* background-color: red; */
     
     
 }
 
 .poso{
     position: relative;
-    z-index: 20;
-    
+    overflow: hidden; 
+    height: 550px;    
 }
 .Events img{
     max-width: 100%;
@@ -889,12 +901,14 @@ text-align: center;
     text-align: center;
     border: 1px solid white;
     width: 450px;
-    bottom: -150px;
     position: absolute;
+    top: 300px;
     right: 50px;
     z-index: 15;
     background-color: white;
     padding: 10px 20px;
+
+    height: 500px;
 }
 
 .info-events h2{
